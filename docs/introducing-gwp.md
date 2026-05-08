@@ -12,16 +12,22 @@ As AI collaboration becomes more common, many conversations remain focused on:
 
 Those topics matter.
 
-But another challenge is beginning to emerge underneath them:
+## Inspiration and Influence
 
-How do humans and AI maintain aligned, explainable, and trustworthy collaboration over time?
+Governed Workspace Protocol (GWP) was heavily influenced by emerging ideas in:
 
-This question became increasingly important while exploring emerging ideas in:
+- Interpretable Context Methodology (ICM),
+- Model Workspace Protocols (MWP),
+- filesystem-native collaboration,
+- and workspace-oriented AI systems.
 
-- Interpretable Context Methodology (ICM)
-- Model Workspace Protocols (MWP)
-- filesystem-native AI collaboration
-- and context-oriented workflows.
+In particular, the work of Jake Van Clief and others exploring persistent, workspace-centered AI collaboration helped inspire many of the concepts explored here.
+
+GWP emerged from operational and governance questions that arose while experimenting with these workspace-oriented collaboration models.
+
+The intention of GWP is not to replace ICM or MWP concepts, but to explore how collaborative continuity, alignment, explainability, and trusted context stewardship may evolve alongside them.
+
+## How do humans and AI maintain aligned, explainable, and trustworthy collaboration over time?
 
 One of the most compelling ideas emerging from this space is:
 
