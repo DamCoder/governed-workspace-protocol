@@ -2,9 +2,15 @@
 
 ## Purpose
 
-The `REVIEW_HISTORY` folder preserves review lineage and reasoning continuity over time.
+A Review History folder preserves review lineage and reasoning continuity over time.
+
+In the Governed Workspace Protocol, Review History can exist at two levels:
+
+1. **Workspace Level** (e.g., `/REVIEW_HISTORY`): For global audits, template reviews, and overarching governance checks.
+2. **Project Level** (e.g., inside a specific project folder): For self-contained audits of a specific project's lifecycle.
 
 Review history may include:
+
 - machine-generated review findings,
 - human review updates,
 - alignment discussions,
@@ -13,9 +19,10 @@ Review history may include:
 
 ---
 
-# Goals
+## Goals
 
 Review history exists to support:
+
 - explainability,
 - transparency,
 - alignment tracking,
@@ -27,9 +34,10 @@ The goal is preserving reasoning continuity and visible alignment evolution.
 
 ---
 
-# Suggested Review Record Structure
+## Suggested Review Record Structure
 
 Review records may include:
+
 - review date,
 - review scope,
 - findings,
@@ -40,9 +48,10 @@ Review records may include:
 
 ---
 
-# Human and AI Collaboration
+## Human and AI Collaboration
 
 Review history may contain:
+
 - AI-generated observations,
 - reviewer summaries,
 - human clarification,
