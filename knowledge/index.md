@@ -27,6 +27,18 @@ OKF base fields. The field set is documented in
 - **OKF** answers: *what knowledge exists?*
 - **GWP** answers: *how should that knowledge be governed, trusted, reviewed, and consumed?*
 
+## GWP and structure
+
+GWP governs collaboration behavior, not workspace structure. This OKF layout
+is a **recommended substrate** for packaging the protocol — not a requirement.
+
+The governance artifacts are deliberately structure-agnostic: each one is a
+self-contained markdown file that can be dropped into any repository, folder,
+or documentation system. A team can adopt GWP's principles without adopting
+this directory tree at all. OKF is offered here because it makes the same
+artifacts portable, discoverable, and AI-consumable — adding interoperability
+without changing what GWP is.
+
 ---
 
 ## Governance

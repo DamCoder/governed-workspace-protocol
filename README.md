@@ -148,6 +148,8 @@ The goal is preserving collaborative continuity over time.
 
 GWP is structured as an [Open Knowledge Format (OKF)](https://cloud.google.com/blog/products/data-analytics/how-the-open-knowledge-format-can-improve-data-sharing/) bundle — a directory of markdown files with governed YAML frontmatter. See [`knowledge/index.md`](knowledge/index.md) for the bundle entry point.
 
+This OKF layout is a recommended substrate, not a requirement: consistent with GWP governing collaboration behavior rather than workspace structure, each governance artifact remains a self-contained, drop-in markdown file, and teams can adopt GWP's principles without adopting this directory tree.
+
 ```text
 knowledge/
 ├── index.md
