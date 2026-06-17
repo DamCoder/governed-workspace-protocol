@@ -16,10 +16,10 @@ confidence: working
 alignment:
   status: aligned
 related:
-  - "[[stewardship]]"
-  - "[[review-standard]]"
-  - "[[authority-model]]"
-  - "[[shared-language]]"
+  - stewardship.md
+  - review-standard.md
+  - authority-model.md
+  - ../concepts/shared-language.md
 ---
 
 # Shared Alignment Context

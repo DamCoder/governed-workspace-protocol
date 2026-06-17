@@ -1,8 +1,8 @@
 ---
-type: concept
+type: index
 title: Shared Language
-description: Glossary of commonly used GWP concepts so humans and AI operate from shared understanding.
-tags: [glossary, concepts, terminology]
+description: Index of the GWP glossary — commonly used concepts, each defined in its own concept file, so humans and AI operate from shared understanding.
+tags: [glossary, concepts, terminology, index]
 timestamp: 2026-06-17
 authority:
   owner: GWP Contributors
@@ -16,129 +16,29 @@ confidence: working
 alignment:
   status: aligned
 related:
-  - "[[alignment]]"
-  - "[[review-standard]]"
-  - "[[authority-model]]"
+  - ../governance/alignment.md
+  - ../governance/review-standard.md
+  - ../governance/authority-model.md
 ---
 
 # Shared Language
 
-This document defines commonly used concepts within the workspace.
+This is the index for GWP's shared vocabulary. Each concept is defined in its
+own file so that terms can be linked, cited, and consumed individually — the
+links below form an [OKF](../index.md) knowledge graph.
 
 The goal is not rigid terminology enforcement.
 
 The goal is helping humans and AI operate from shared understanding.
 
----
+## Concepts
 
-# Alignment
-
-The ongoing state of work remaining connected to:
-
-- shared purpose,
-- documented reasoning,
-- trusted sources,
-- and current understanding.
-
----
-
-# Context
-
-The collection of information, reasoning, assumptions,
-and supporting materials that influence work and decisions.
-
-Context may include:
-
-- documents,
-- notes,
-- conversations,
-- research,
-- decisions,
-- or workflow artifacts.
-
----
-
-# Context Drift
-
-The gradual loss of alignment between:
-
-- current work,
-- original intent,
-- trusted sources,
-- or shared understanding.
-
-Examples may include:
-
-- undocumented assumptions,
-- conflicting reasoning,
-- or disconnected implementation.
-
----
-
-# Trusted Source
-
-A source of information that contributors collectively recognize
-as authoritative or reliable within the workspace.
-
-Examples may include:
-
-- approved documents,
-- research,
-- policies,
-- stakeholder decisions,
-- or reviewed findings.
-
----
-
-# Shared Understanding
-
-A common understanding between contributors regarding:
-
-- purpose,
-- reasoning,
-- assumptions,
-- workflow state,
-- and intended outcomes.
-
----
-
-# Review
-
-A collaborative process used to evaluate:
-
-- alignment,
-- consistency,
-- explainability,
-- and contextual continuity.
-
----
-
-# Stewardship
-
-The shared responsibility of contributors to:
-
-- preserve clarity,
-- reduce ambiguity,
-- maintain alignment,
-- and support long-term collaboration quality.
-
----
-
-# Reasoning Continuity
-
-The ability for contributors to understand:
-
-- how conclusions were reached,
-- what context influenced decisions,
-- and how work evolved over time.
-
----
-
-# Workspace
-
-A shared collaborative environment where humans and AI interact
-through documents, context, workflows, and reasoning artifacts.
-
-GWP does not define workspace structure.
-
-GWP defines collaboration and alignment principles within the workspace.
+- [Alignment](alignment.md) — work remaining connected to shared purpose, reasoning, trusted sources, and current understanding.
+- [Context](context.md) — the information, reasoning, and assumptions that influence work and decisions.
+- [Context Drift](context-drift.md) — the gradual loss of alignment between current work and original intent.
+- [Trusted Source](trusted-source.md) — a source contributors collectively recognize as authoritative or reliable.
+- [Shared Understanding](shared-understanding.md) — a common understanding of purpose, reasoning, assumptions, and outcomes.
+- [Review](review.md) — a collaborative process to evaluate alignment, consistency, explainability, and continuity.
+- [Stewardship](stewardship.md) — the shared responsibility to preserve clarity, reduce ambiguity, and maintain alignment.
+- [Reasoning Continuity](reasoning-continuity.md) — understanding how conclusions were reached and how work evolved.
+- [Workspace](workspace.md) — the shared environment where humans and AI collaborate through documents and context.

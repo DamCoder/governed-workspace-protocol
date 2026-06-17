@@ -16,10 +16,10 @@ confidence: working
 alignment:
   status: aligned
 related:
-  - "[[alignment]]"
-  - "[[stewardship]]"
-  - "[[authority-model]]"
-  - "[[review-history/README]]"
+  - alignment.md
+  - stewardship.md
+  - authority-model.md
+  - review-history/README.md
 ---
 
 # Collaborative Review Standard

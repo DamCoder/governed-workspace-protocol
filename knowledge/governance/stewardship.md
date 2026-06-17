@@ -16,9 +16,9 @@ confidence: working
 alignment:
   status: aligned
 related:
-  - "[[alignment]]"
-  - "[[review-standard]]"
-  - "[[authority-model]]"
+  - alignment.md
+  - review-standard.md
+  - authority-model.md
 ---
 
 # Shared Responsibility

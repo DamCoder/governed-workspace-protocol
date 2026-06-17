@@ -99,7 +99,9 @@ relationships:
     description: >
       Optional list of links to related assets, forming the OKF knowledge
       graph. GWP tooling may use these for context construction and impact
-      analysis. Use markdown/wikilink references, e.g. "[[alignment]]".
+      analysis. Use relative markdown paths (per the OKF spec), e.g.
+      "alignment.md" or "../governance/alignment.md", so references stay
+      unambiguous when concept and governance assets share a base name.
 
 # ---------------------------------------------------------------------------
 # Compliance levels (informational; see PRD section 12)

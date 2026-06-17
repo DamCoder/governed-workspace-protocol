@@ -53,7 +53,16 @@ The first-class governance artifacts of the protocol:
 
 ## Concepts
 
-- [Shared Language](concepts/shared-language.md) — glossary of core GWP terms.
+- [Shared Language](concepts/shared-language.md) — glossary index for the concepts below.
+- [Alignment](concepts/alignment.md)
+- [Context](concepts/context.md)
+- [Context Drift](concepts/context-drift.md)
+- [Trusted Source](concepts/trusted-source.md)
+- [Shared Understanding](concepts/shared-understanding.md)
+- [Review](concepts/review.md)
+- [Stewardship](concepts/stewardship.md)
+- [Reasoning Continuity](concepts/reasoning-continuity.md)
+- [Workspace](concepts/workspace.md)
 
 ## Standards
 

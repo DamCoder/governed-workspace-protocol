@@ -16,8 +16,8 @@ confidence: working
 alignment:
   status: aligned
 related:
-  - "[[review-standard]]"
-  - "[[alignment]]"
+  - ../review-standard.md
+  - ../alignment.md
 ---
 
 # Review History

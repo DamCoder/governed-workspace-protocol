@@ -16,9 +16,9 @@ confidence: working
 alignment:
   status: aligned
 related:
-  - "[[alignment]]"
-  - "[[review-standard]]"
-  - "[[stewardship]]"
+  - alignment.md
+  - review-standard.md
+  - stewardship.md
 ---
 
 # Trusted Sources
@@ -44,7 +44,7 @@ explainable, and trustworthy collaboration.
 When conflicts or uncertainty occur,
 contributors should generally prioritize:
 
-1. Shared Alignment Context ([[alignment]])
+1. Shared Alignment Context ([alignment.md](alignment.md))
 2. Approved Workspace Documents
 3. Reviewed Research and Evidence
 4. Collaborative Review Findings
