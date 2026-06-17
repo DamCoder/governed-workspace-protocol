@@ -66,7 +66,7 @@ The first-class governance artifacts of the protocol:
 
 ## Standards
 
-- *(none yet — see [standards/README.md](standards/README.md))*
+- [Knowledge Asset Authoring Standard](standards/knowledge-asset-authoring.md) — how assets in this bundle are authored.
 
 ## Systems
 
@@ -74,7 +74,7 @@ The first-class governance artifacts of the protocol:
 
 ## Processes
 
-- *(none yet — see [processes/README.md](processes/README.md))*
+- [Conducting a Collaborative Review](processes/conducting-a-review.md) — a step-by-step review runbook.
 
 ---
 
