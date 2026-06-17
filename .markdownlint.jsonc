@@ -1,0 +1,17 @@
+{
+  // GWP markdown lint configuration.
+  // Defaults apply except where a rule conflicts with a deliberate
+  // documentation convention in this repository.
+
+  "default": true,
+
+  // MD013 (line-length): GWP docs are authored as readable prose with
+  // one idea per line; an 80-character hard limit is not appropriate here.
+  "MD013": false,
+
+  // MD025 (single H1): the knowledge assets use multiple top-level
+  // headings as section markers. The canonical title also lives in each
+  // file's `title:` frontmatter, so multiple H1s are an intentional
+  // structural choice rather than a defect.
+  "MD025": false
+}

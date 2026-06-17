@@ -1,3 +1,27 @@
+---
+type: governance
+title: Collaborative Review Standard
+description: How review preserves shared understanding, alignment, and reasoning continuity across the workspace.
+tags: [review, governance, alignment]
+timestamp: 2026-06-17
+authority:
+  owner: GWP Contributors
+steward:
+  team: GWP Contributors
+review:
+  required: true
+  cadence: annual
+  last_reviewed: 2026-06-17
+confidence: working
+alignment:
+  status: aligned
+related:
+  - alignment.md
+  - stewardship.md
+  - authority-model.md
+  - review-history/README.md
+---
+
 # Collaborative Review Standard
 
 ## Purpose of Review
@@ -6,6 +30,7 @@ Review exists to help preserve shared understanding,
 alignment, and reasoning continuity across the workspace.
 
 The review process helps identify:
+
 - misalignment,
 - reasoning gaps,
 - conflicting assumptions,
@@ -27,6 +52,7 @@ Review whether work still supports
 the shared purpose of the workspace.
 
 Flag:
+
 - disconnected work,
 - unrelated expansion,
 - or outputs that no longer support the intended direction.
@@ -38,6 +64,7 @@ Flag:
 Review whether reasoning remains consistent across documents and stages.
 
 Flag:
+
 - contradictory conclusions,
 - undocumented assumptions,
 - or unexplained changes in direction.
@@ -50,6 +77,7 @@ Review whether contributors are working from
 shared and trusted context.
 
 Flag:
+
 - unsupported claims,
 - isolated assumptions,
 - or conflicts with approved project documents.
@@ -61,6 +89,7 @@ Flag:
 Review whether work is occurring in a logical and explainable sequence.
 
 Flag:
+
 - skipped reasoning steps,
 - premature implementation,
 - or conclusions without supporting context.
@@ -72,6 +101,7 @@ Flag:
 Review whether context remains current and relevant.
 
 Flag:
+
 - outdated assumptions,
 - abandoned work,
 - obsolete guidance,
@@ -82,11 +112,13 @@ Flag:
 ## Explainability
 
 Review whether contributors can reasonably understand:
+
 - why decisions were made,
 - how conclusions were reached,
 - and what context influenced the outcome.
 
 Flag:
+
 - hidden reasoning,
 - unclear transitions,
 - or opaque recommendations.
@@ -98,6 +130,7 @@ Flag:
 ## High Priority
 
 Issues that could significantly impact:
+
 - alignment,
 - trust,
 - understanding,
@@ -108,6 +141,7 @@ Issues that could significantly impact:
 ## Medium Priority
 
 Issues that may create:
+
 - confusion,
 - duplicated work,
 - or reduced maintainability.
@@ -125,6 +159,7 @@ Minor opportunities to improve clarity or continuity.
 Review findings are guidance, not automatic decisions.
 
 Humans remain responsible for:
+
 - interpretation,
 - discussion,
 - prioritization,
@@ -135,6 +170,7 @@ Humans remain responsible for:
 # Review Philosophy
 
 The purpose of collaborative review is to help maintain:
+
 - shared understanding,
 - explainable reasoning,
 - contextual continuity,

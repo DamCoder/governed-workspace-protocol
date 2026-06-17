@@ -1,0 +1,13 @@
+# macOS
+.DS_Store
+**/.DS_Store
+
+# Local work-in-progress: video-style documentation (Remotion project).
+# Not yet decided whether this belongs in the repo — keep it local for now.
+video/
+
+# Node (in case any tooling is added at the repo root)
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*

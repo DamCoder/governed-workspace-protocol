@@ -1,3 +1,26 @@
+---
+type: governance
+title: Shared Responsibility & Stewardship
+description: The shared responsibilities of human, AI, and reviewer contributors in a governed workspace.
+tags: [stewardship, responsibility, governance]
+timestamp: 2026-06-17
+authority:
+  owner: GWP Contributors
+steward:
+  team: GWP Contributors
+review:
+  required: true
+  cadence: annual
+  last_reviewed: 2026-06-17
+confidence: working
+alignment:
+  status: aligned
+related:
+  - alignment.md
+  - review-standard.md
+  - authority-model.md
+---
+
 # Shared Responsibility
 
 ## Purpose
@@ -6,6 +29,7 @@ This document describes the shared responsibilities of contributors
 participating within a Governed Workspace Protocol (GWP) environment.
 
 The goal is supporting:
+
 - alignment,
 - explainability,
 - reasoning continuity,
@@ -16,6 +40,7 @@ The goal is supporting:
 # Shared Contributor Responsibilities
 
 All contributors share responsibility for:
+
 - preserving clarity,
 - documenting reasoning,
 - reducing ambiguity,
@@ -27,6 +52,7 @@ All contributors share responsibility for:
 # Human Responsibilities
 
 Humans remain responsible for:
+
 - defining goals,
 - reviewing outputs,
 - validating reasoning,
@@ -34,6 +60,7 @@ Humans remain responsible for:
 - and making final decisions.
 
 Humans provide:
+
 - direction,
 - judgment,
 - stewardship,
@@ -44,6 +71,7 @@ Humans provide:
 # AI Responsibilities
 
 AI systems assist contributors by helping:
+
 - organize information,
 - summarize context,
 - identify inconsistencies,
@@ -58,6 +86,7 @@ AI systems should not operate as hidden or autonomous decision makers.
 # Reviewer Responsibilities
 
 Reviewers help identify:
+
 - alignment drift,
 - conflicting assumptions,
 - reasoning gaps,
@@ -65,6 +94,7 @@ Reviewers help identify:
 - and explainability concerns.
 
 Review findings should remain:
+
 - visible,
 - explainable,
 - and reviewable by humans.
@@ -76,6 +106,7 @@ Review findings should remain:
 Stewardship is collaborative rather than hierarchical.
 
 Contributors should strive to:
+
 - preserve useful context,
 - avoid fragmentation,
 - reduce duplication,
@@ -86,6 +117,7 @@ Contributors should strive to:
 # Shared Workspace Culture
 
 Healthy collaborative workspaces encourage:
+
 - transparency,
 - explainability,
 - respectful review,

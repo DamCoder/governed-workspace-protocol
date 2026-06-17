@@ -1,10 +1,8 @@
-Governed Workspace Protocol (GWP)
+# Governed Workspace Protocol (GWP)
 
 A lightweight protocol for maintaining aligned, explainable, and reviewable collaboration across shared human and AI workspaces.
 
-⸻
-
-What Is GWP?
+## What Is GWP?
 
 Governed Workspace Protocol (GWP) is a lightweight collaboration protocol designed to help humans and AI systems work together through:
 
@@ -25,9 +23,7 @@ GWP is filesystem-native, but conceptually portable across:
 
 GWP governs collaboration behavior, not workspace structure.
 
-⸻
-
-Why GWP Exists
+## Why GWP Exists
 
 As AI collaboration becomes more common, teams are beginning to encounter new operational challenges:
 
@@ -55,9 +51,7 @@ The goal is not simply generating outputs.
 
 The goal is preserving shared understanding.
 
-⸻
-
-Relationship to ICM and MWP
+## Relationship to ICM and MWP
 
 GWP is heavily influenced by emerging ideas in:
 
@@ -70,11 +64,12 @@ In particular, the work of Jake Van Clief and others exploring workspace-oriente
 
 GWP is intended to complement — not replace — existing ICM/MWP workspace models.
 
-General Relationship
+### General Relationship
 
-Concept	Focus
-ICM / MWP	How workspaces may be organized
-GWP	How collaboration remains aligned and explainable within those workspaces
+| Concept | Focus |
+| --- | --- |
+| ICM / MWP | How workspaces may be organized |
+| GWP | How collaboration remains aligned and explainable within those workspaces |
 
 GWP intentionally avoids prescribing:
 
@@ -90,13 +85,11 @@ Instead, GWP focuses on:
 * trusted context,
 * and explainable review.
 
-⸻
-
-Core Ideas
+## Core Ideas
 
 GWP is built around several foundational principles:
 
-Humans Lead the Process
+### Humans Lead the Process
 
 Humans remain responsible for:
 
@@ -113,9 +106,7 @@ AI systems assist collaboration by helping:
 * summarize reasoning,
 * and support contextual continuity.
 
-⸻
-
-Context Should Remain Explainable
+### Context Should Remain Explainable
 
 Workspaces should remain:
 
@@ -130,9 +121,7 @@ The protocol encourages:
 * documented assumptions,
 * and explainable collaboration.
 
-⸻
-
-Alignment Before Action
+### Alignment Before Action
 
 Execution should remain connected to:
 
@@ -141,9 +130,7 @@ Execution should remain connected to:
 * trusted sources,
 * and collaborative understanding.
 
-⸻
-
-Review Supports Shared Understanding
+### Review Supports Shared Understanding
 
 Review exists to help identify:
 
@@ -157,18 +144,27 @@ The goal of review is not rigid enforcement.
 
 The goal is preserving collaborative continuity over time.
 
-⸻
+## Current Protocol Components
 
-Current Protocol Components
+GWP is structured as an [Open Knowledge Format (OKF)](https://cloud.google.com/blog/products/data-analytics/how-the-open-knowledge-format-can-improve-data-sharing/) bundle — a directory of markdown files with governed YAML frontmatter. See [`knowledge/index.md`](knowledge/index.md) for the bundle entry point.
 
-The current minimum viable protocol includes lightweight markdown artifacts such as:
+This OKF layout is a recommended substrate, not a requirement: consistent with GWP governing collaboration behavior rather than workspace structure, each governance artifact remains a self-contained, drop-in markdown file, and teams can adopt GWP's principles without adopting this directory tree.
 
-ALIGNMENT.md
-REVIEW_STANDARD.md
-SHARED_LANGUAGE.md
-TRUSTED_SOURCES.md
-SHARED_RESPONSIBILITY.md
-REVIEW_HISTORY/
+```text
+knowledge/
+├── index.md
+├── governance/
+│   ├── alignment.md          (was ALIGNMENT.md)
+│   ├── review-standard.md    (was REVIEW_STANDARD.md)
+│   ├── stewardship.md        (was SHARED_RESPONSIBILITY.md)
+│   ├── authority-model.md    (was TRUSTED_SOURCES.md)
+│   └── review-history/       (was REVIEW_HISTORY/)
+└── concepts/
+    └── shared-language.md    (was SHARED_LANGUAGE.md)
+
+schemas/gwp-metadata-schema.yaml  — OKF base + GWP governance fields
+tools/context-steward/            — planned tooling (Level 4)
+```
 
 These artifacts are intended to support:
 
@@ -177,9 +173,7 @@ These artifacts are intended to support:
 * explainability,
 * and collaborative stewardship.
 
-⸻
-
-Design Goals
+## Design Goals
 
 GWP is designed to be:
 
@@ -197,9 +191,7 @@ The protocol should support:
 * interoperability,
 * and collaborative evolution.
 
-⸻
-
-Potential Use Cases
+## Potential Use Cases
 
 GWP is not limited to software engineering.
 
@@ -217,9 +209,7 @@ Potential applications may include:
 
 Anywhere humans and AI collaborate through shared context, alignment becomes important.
 
-⸻
-
-Current Status
+## Current Status
 
 GWP is an evolving open exploration of:
 
@@ -232,9 +222,7 @@ The ideas here are intentionally lightweight and experimental.
 
 Feedback, discussion, and collaborative exploration are welcome.
 
-⸻
-
-Contributing
+## Contributing
 
 Contributions, critiques, and discussions are encouraged.
 
@@ -248,14 +236,10 @@ Especially from people exploring:
 * explainable workflows,
 * or operational AI design.
 
-⸻
-
-License
+## License
 
 MIT License
 
-⸻
-
-Disclaimer
+## Disclaimer
 
 This repository represents an open exploration of collaborative AI workspace concepts and does not represent the official views or positions of any employer or organization.

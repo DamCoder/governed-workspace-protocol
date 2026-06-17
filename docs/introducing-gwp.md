@@ -146,7 +146,7 @@ GWP is intended to complement existing ICM/MWP concepts rather than replace them
 A simple way to think about the relationship is:
 
 | Concept | Focus |
-|---|---|
+| --- | --- |
 | ICM / MWP | How workspaces may be organized |
 | GWP | How collaboration remains aligned within those workspaces |
 
@@ -167,18 +167,22 @@ GWP explores:
 
 ## Current Protocol Components
 
-The current protocol is intentionally lightweight.
-
-The initial protocol artifacts include:
+The current protocol is intentionally lightweight, and is structured as an [Open Knowledge Format (OKF)](https://cloud.google.com/blog/products/data-analytics/how-the-open-knowledge-format-can-improve-data-sharing/) bundle — a directory of markdown files, each carrying governed YAML frontmatter:
 
 ```text
-ALIGNMENT.md
-REVIEW_STANDARD.md
-SHARED_LANGUAGE.md
-TRUSTED_SOURCES.md
-SHARED_RESPONSIBILITY.md
-REVIEW_HISTORY/
+knowledge/
+├── index.md
+├── governance/
+│   ├── alignment.md
+│   ├── review-standard.md
+│   ├── stewardship.md
+│   ├── authority-model.md
+│   └── review-history/
+└── concepts/
+    └── shared-language.md
 ```
+
+OKF describes *what knowledge exists*; GWP frontmatter (authority, stewardship, review, confidence, alignment) describes *how it is governed*.
 
 These artifacts are intended to help preserve:
 
