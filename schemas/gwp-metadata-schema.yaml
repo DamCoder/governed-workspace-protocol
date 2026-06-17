@@ -1,0 +1,112 @@
+# GWP Metadata Schema
+#
+# Governed Workspace Protocol (GWP) frontmatter, layered on Google's
+# Open Knowledge Format (OKF) v0.1.
+#
+#   OKF answers:  "What knowledge exists?"   -> base fields below
+#   GWP answers:  "How is it governed?"      -> extension fields below
+#
+# OKF is intentionally minimal: `type` is the only required field, and
+# producers are free to add their own fields. The GWP extension fields are
+# such producer-defined additions and remain fully OKF-compliant — an
+# OKF-only consumer simply ignores fields it does not recognize.
+#
+# This file is documentation, not an enforced runtime schema. There is no
+# OKF schema registry; validation (Compliance Level 4) is future tooling.
+
+version: 0.1
+aligns_with:
+  spec: Open Knowledge Format (OKF)
+  spec_version: 0.1
+  publisher: Google Cloud
+
+# ---------------------------------------------------------------------------
+# Layer 1 — OKF base fields
+# ---------------------------------------------------------------------------
+okf_base:
+  type:
+    required: true
+    description: >
+      The kind of knowledge asset. The set of types is the producer's choice.
+    gwp_types: [governance, concept, standard, system, process]
+  title:
+    required: false
+    description: Human-readable title of the asset.
+  description:
+    required: false
+    description: One- or two-sentence summary of the asset.
+  resource:
+    required: false
+    description: >
+      Optional pointer to an external resource the concept describes
+      (dataset, API, URL, table, etc.).
+  tags:
+    required: false
+    description: List of free-form keywords for discovery.
+  timestamp:
+    required: false
+    description: ISO-8601 date the asset was last updated (e.g. 2026-06-17).
+
+# ---------------------------------------------------------------------------
+# Layer 2 — GWP governance extensions (producer-defined, optional)
+# ---------------------------------------------------------------------------
+gwp_extensions:
+  authority:
+    description: Official ownership of the asset.
+    fields:
+      owner:
+        required_when_governed: true
+        description: The team or role accountable for the asset's content.
+  steward:
+    description: Maintenance responsibility (may differ from authority).
+    fields:
+      team:
+        required_when_governed: true
+        description: The team or role that maintains the asset over time.
+  review:
+    description: Review requirements and lineage.
+    fields:
+      required:
+        type: boolean
+        description: Whether the asset is subject to formal review.
+      cadence:
+        description: How often review should occur (e.g. annual, quarterly, as-needed).
+      last_reviewed:
+        description: ISO-8601 date of the most recent review.
+  confidence:
+    description: Maturity / trust classification of the asset's content.
+    allowed_values:
+      - authoritative   # reviewed and treated as the source of truth
+      - reviewed        # collaboratively reviewed, not yet authoritative
+      - working         # actively evolving working content
+      - experimental    # exploratory, not yet trusted
+      - deprecated      # retained for lineage; no longer current
+  alignment:
+    description: Alignment status of the asset relative to workspace purpose.
+    fields:
+      status:
+        allowed_values:
+          - aligned
+          - partial
+          - under_review
+          - conflicting
+
+# ---------------------------------------------------------------------------
+# Relationships (OKF knowledge graph)
+# ---------------------------------------------------------------------------
+relationships:
+  related:
+    description: >
+      Optional list of links to related assets, forming the OKF knowledge
+      graph. GWP tooling may use these for context construction and impact
+      analysis. Use markdown/wikilink references, e.g. "[[alignment]]".
+
+# ---------------------------------------------------------------------------
+# Compliance levels (informational; see PRD section 12)
+# ---------------------------------------------------------------------------
+compliance_levels:
+  0: Standard markdown repository
+  1: OKF-compliant repository
+  2: OKF repository with GWP metadata
+  3: Governed workspace (authority, steward, review, governance docs present)
+  4: Governed workspace with active stewardship tooling

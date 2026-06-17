@@ -1,3 +1,26 @@
+---
+type: concept
+title: Shared Language
+description: Glossary of commonly used GWP concepts so humans and AI operate from shared understanding.
+tags: [glossary, concepts, terminology]
+timestamp: 2026-06-17
+authority:
+  owner: GWP Contributors
+steward:
+  team: GWP Contributors
+review:
+  required: true
+  cadence: annual
+  last_reviewed: 2026-06-17
+confidence: working
+alignment:
+  status: aligned
+related:
+  - "[[alignment]]"
+  - "[[review-standard]]"
+  - "[[authority-model]]"
+---
+
 # Shared Language
 
 This document defines commonly used concepts within the workspace.
@@ -11,6 +34,7 @@ The goal is helping humans and AI operate from shared understanding.
 # Alignment
 
 The ongoing state of work remaining connected to:
+
 - shared purpose,
 - documented reasoning,
 - trusted sources,
@@ -24,6 +48,7 @@ The collection of information, reasoning, assumptions,
 and supporting materials that influence work and decisions.
 
 Context may include:
+
 - documents,
 - notes,
 - conversations,
@@ -36,12 +61,14 @@ Context may include:
 # Context Drift
 
 The gradual loss of alignment between:
+
 - current work,
 - original intent,
 - trusted sources,
 - or shared understanding.
 
 Examples may include:
+
 - undocumented assumptions,
 - conflicting reasoning,
 - or disconnected implementation.
@@ -54,6 +81,7 @@ A source of information that contributors collectively recognize
 as authoritative or reliable within the workspace.
 
 Examples may include:
+
 - approved documents,
 - research,
 - policies,
@@ -65,6 +93,7 @@ Examples may include:
 # Shared Understanding
 
 A common understanding between contributors regarding:
+
 - purpose,
 - reasoning,
 - assumptions,
@@ -76,6 +105,7 @@ A common understanding between contributors regarding:
 # Review
 
 A collaborative process used to evaluate:
+
 - alignment,
 - consistency,
 - explainability,
@@ -86,6 +116,7 @@ A collaborative process used to evaluate:
 # Stewardship
 
 The shared responsibility of contributors to:
+
 - preserve clarity,
 - reduce ambiguity,
 - maintain alignment,
@@ -96,6 +127,7 @@ The shared responsibility of contributors to:
 # Reasoning Continuity
 
 The ability for contributors to understand:
+
 - how conclusions were reached,
 - what context influenced decisions,
 - and how work evolved over time.

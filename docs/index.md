@@ -18,24 +18,34 @@ GWP governs collaboration behavior and alignment principles, not workspace struc
 
 ### Core Protocol Artifacts
 
-The protocol currently consists of lightweight markdown artifacts intended to support:
+GWP is structured as an [Open Knowledge Format (OKF)](https://cloud.google.com/blog/products/data-analytics/how-the-open-knowledge-format-can-improve-data-sharing/) bundle — a directory of markdown files with governed YAML frontmatter — intended to support:
 
 - collaborative continuity,
 - reasoning alignment,
 - explainability,
 - and trusted context stewardship.
 
-### Core Files
+The bundle entry point is [`knowledge/index.md`](../knowledge/index.md).
 
-- `ALIGNMENT.md`
-- `REVIEW_STANDARD.md`
-- `SHARED_LANGUAGE.md`
-- `TRUSTED_SOURCES.md`
-- `SHARED_RESPONSIBILITY.md`
+### Governance
+
+- [Shared Alignment Context](../knowledge/governance/alignment.md)
+- [Collaborative Review Standard](../knowledge/governance/review-standard.md)
+- [Shared Responsibility & Stewardship](../knowledge/governance/stewardship.md)
+- [Authority Model & Trusted Sources](../knowledge/governance/authority-model.md)
+
+### Concepts
+
+- [Shared Language](../knowledge/concepts/shared-language.md)
 
 ### Review and Lineage
 
-- `REVIEW_HISTORY/`
+- [Review History](../knowledge/governance/review-history/README.md)
+
+### Metadata & Tooling
+
+- [`schemas/gwp-metadata-schema.yaml`](../schemas/gwp-metadata-schema.yaml) — OKF base + GWP governance fields
+- [`tools/context-steward/`](../tools/context-steward/README.md) — planned stewardship tooling (Level 4)
 
 ---
 
@@ -53,7 +63,7 @@ GWP is intended to complement — not replace — existing workspace models.
 ## General Relationship
 
 | Concept | Focus |
-|---|---|
+| --- | --- |
 | ICM / MWP | Workspace organization |
 | GWP | Collaborative continuity and alignment |
 

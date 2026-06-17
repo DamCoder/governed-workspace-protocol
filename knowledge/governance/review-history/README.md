@@ -1,3 +1,25 @@
+---
+type: governance
+title: Review History
+description: How review lineage and reasoning continuity are preserved over time, at workspace or project level.
+tags: [review, history, lineage, governance]
+timestamp: 2026-06-17
+authority:
+  owner: GWP Contributors
+steward:
+  team: GWP Contributors
+review:
+  required: false
+  cadence: as-needed
+  last_reviewed: 2026-06-17
+confidence: working
+alignment:
+  status: aligned
+related:
+  - "[[review-standard]]"
+  - "[[alignment]]"
+---
+
 # Review History
 
 ## Purpose
