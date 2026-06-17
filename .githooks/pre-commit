@@ -1,0 +1,24 @@
+#!/bin/sh
+# GWP pre-commit hook — markdown lint, in parity with CI.
+#
+# Runs the same pinned markdownlint-cli2 command, against the same glob, using
+# the same .markdownlint.jsonc config as .github/workflows/markdownlint.yml.
+# Keep MDL_VERSION in sync with that workflow.
+#
+# Enable once per clone:  git config core.hooksPath .githooks
+
+MDL_VERSION="0.22.1"
+
+# Only lint when markdown is part of the commit.
+if git diff --cached --name-only --diff-filter=ACM | grep -q '\.md$'; then
+  echo "pre-commit: running markdownlint-cli2@${MDL_VERSION} ..."
+  if ! npx --yes "markdownlint-cli2@${MDL_VERSION}" "**/*.md" "#node_modules" "#video"; then
+    echo >&2
+    echo "✖ markdownlint found issues. Fix them, or auto-fix with:" >&2
+    echo "    npx markdownlint-cli2@${MDL_VERSION} --fix \"**/*.md\" \"#node_modules\" \"#video\"" >&2
+    echo "then re-stage and commit. (To bypass once: git commit --no-verify)" >&2
+    exit 1
+  fi
+fi
+
+exit 0

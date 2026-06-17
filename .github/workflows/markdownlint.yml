@@ -1,0 +1,20 @@
+name: markdownlint
+
+# Markdown lint, in parity with the local pre-commit hook (.githooks/pre-commit).
+# Keep the pinned markdownlint-cli2 version in sync with that hook.
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  markdownlint:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+      - name: Run markdownlint-cli2
+        run: npx --yes markdownlint-cli2@0.22.1 "**/*.md" "#node_modules" "#video"

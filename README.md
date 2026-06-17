@@ -236,6 +236,26 @@ Especially from people exploring:
 * explainable workflows,
 * or operational AI design.
 
+## Linting
+
+Markdown is linted with [markdownlint-cli2](https://github.com/DavidAnson/markdownlint-cli2) using the shared [`.markdownlint.jsonc`](.markdownlint.jsonc) config. The same pinned command runs in your editor (the markdownlint extension), in a local pre-commit hook, and in CI — so the three never disagree.
+
+Run it manually:
+
+```sh
+npx markdownlint-cli2@0.22.1 "**/*.md" "#node_modules" "#video"
+# add --fix to auto-correct most issues
+```
+
+Enable the pre-commit hook once per clone (hooks are version-controlled under `.githooks/`):
+
+```sh
+git config core.hooksPath .githooks
+```
+
+CI runs the identical command on every push and pull request via
+[`.github/workflows/markdownlint.yml`](.github/workflows/markdownlint.yml).
+
 ## License
 
 MIT License
