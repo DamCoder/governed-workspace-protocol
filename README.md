@@ -23,6 +23,22 @@ GWP is filesystem-native, but conceptually portable across:
 
 GWP governs collaboration behavior, not workspace structure.
 
+## Download & Adopt GWP
+
+You don't need to clone this repo to use GWP. Each tagged release publishes ready-to-use
+bundles on the [Releases page](https://github.com/DamCoder/governed-workspace-protocol/releases):
+
+* **`gwp-<version>.zip`** — the full bundle: a drop-in `starter/` skeleton (frontmatter
+  genericized with fill-in tokens) plus a `reference/` copy of the complete worked
+  example. Best if you're new to GWP and want the example to learn from.
+* **`gwp-<version>-starter.zip`** — the starter skeleton only. Best if you already know
+  GWP and just want a fresh template to spin up another workspace.
+
+Both include a `GETTING-STARTED.md` that walks through copying the files into your own
+workspace and customizing the owner, steward, dates, and trust fields. The bundles are
+built by [`scripts/build-release.sh`](scripts/build-release.sh) and exclude all
+repo-only tooling.
+
 ## Why GWP Exists
 
 As AI collaboration becomes more common, teams are beginning to encounter new operational challenges:
