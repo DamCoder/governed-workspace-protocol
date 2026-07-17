@@ -52,6 +52,9 @@ contributors should generally prioritize:
 6. AI Suggestions and Generated Content
 7. Personal Preference or Assumptions
 
+Note that AI chat memory and conversation history are **not** on this list — see
+[AI Memory Is Not a Trusted Source by Default](#ai-memory-is-not-a-trusted-source-by-default).
+
 ---
 
 # Trusted Source Principles
@@ -89,6 +92,20 @@ Humans remain responsible for:
 - and final decisions.
 
 AI systems assist collaboration but do not replace human stewardship.
+
+---
+
+## AI Memory Is Not a Trusted Source by Default
+
+AI assistants may help initialize and maintain a GWP workspace, but chat memory
+and conversation history are **not** a trusted source by default. Durable
+workspace knowledge should be captured in governed files with clear authority,
+stewardship, confidence, alignment, and review metadata.
+
+GWP is designed to support AI memory, not to depend on it. AI can elicit,
+organize, summarize, and update context — but human-approved files remain the
+authoritative memory of the workspace. If it matters, it belongs in a governed
+file, not only in a conversation.
 
 ---
 

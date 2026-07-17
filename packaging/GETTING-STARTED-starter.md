@@ -28,7 +28,25 @@ cp -R starter/schemas    /path/to/your-workspace/schemas
 
 No runtime, SDK, or build step — GWP is just governed markdown.
 
-## Then customize the frontmatter tokens
+## Initialize it (recommended: let AI do the busywork)
+
+Open the copied folder with your AI assistant and paste:
+
+```text
+This folder contains a Governed Workspace Protocol starter bundle.
+Please initialize it for this workspace.
+
+Read the GWP files, then ask me the minimum questions needed to replace
+the placeholders and create a useful first governed workspace baseline.
+After I answer, update the relevant files and create an initial review record.
+```
+
+The assistant reads the files, asks a few setup questions, replaces the placeholders,
+and drafts an initial review record. **You approve the result** — the files, not the
+chat, are the durable source of truth. The full governed procedure is at
+`starter/knowledge/processes/initializing-a-workspace.md`.
+
+## Or customize the frontmatter tokens by hand
 
 Every asset carries YAML frontmatter with placeholder tokens where you make a decision:
 
