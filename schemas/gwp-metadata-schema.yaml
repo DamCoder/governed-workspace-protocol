@@ -28,7 +28,7 @@ okf_base:
     required: true
     description: >
       The kind of knowledge asset. The set of types is the producer's choice.
-    gwp_types: [governance, concept, standard, system, process]
+    gwp_types: [index, governance, concept, standard, system, process]
   title:
     required: false
     description: Human-readable title of the asset.
