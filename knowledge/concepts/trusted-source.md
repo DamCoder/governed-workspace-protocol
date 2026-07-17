@@ -34,3 +34,7 @@ Examples may include:
 
 How sources are prioritized and how conflicts are resolved is defined in the
 [Authority Model & Trusted Sources](../governance/authority-model.md).
+
+Note that AI chat memory and conversation history are not trusted sources by
+default; durable knowledge belongs in governed files. See the
+[Authority Model](../governance/authority-model.md#ai-memory-is-not-a-trusted-source-by-default).

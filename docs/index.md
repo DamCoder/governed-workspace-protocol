@@ -38,9 +38,15 @@ The bundle entry point is [`knowledge/index.md`](../knowledge/index.md).
 
 - [Shared Language](../knowledge/concepts/shared-language.md)
 
+### Processes
+
+- [Initializing a Workspace](../knowledge/processes/initializing-a-workspace.md) — AI-assisted setup of a new governed workspace from the starter.
+- [Conducting a Collaborative Review](../knowledge/processes/conducting-a-review.md)
+
 ### Review and Lineage
 
 - [Review History](../knowledge/governance/review-history/README.md)
+- [Review History Entry Template](../knowledge/governance/review-history/entry-template.md)
 
 ### Metadata & Tooling
 
