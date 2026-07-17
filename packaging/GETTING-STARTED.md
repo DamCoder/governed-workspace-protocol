@@ -34,17 +34,44 @@ Project home: <https://github.com/DamCoder/governed-workspace-protocol>
 
 ## Quick start
 
-1. Copy the starter into your workspace (a git repo, shared folder, docs system —
-   anywhere):
+First, copy the starter into your workspace (a git repo, shared folder, docs system —
+anywhere):
 
-   ```sh
-   cp -R starter/knowledge  /path/to/your-workspace/knowledge
-   cp -R starter/schemas    /path/to/your-workspace/schemas
-   ```
+```sh
+cp -R starter/knowledge  /path/to/your-workspace/knowledge
+cp -R starter/schemas    /path/to/your-workspace/schemas
+```
 
-2. Replace the placeholder tokens (see the next section).
-3. Commit it alongside your work. That's it — GWP is just governed markdown; there is
-   no runtime, SDK, or build step to install.
+There's no runtime, SDK, or build step to install — GWP is just governed markdown.
+Now turn the generic files into a workspace-specific baseline one of two ways.
+
+### Option A — AI-assisted initialization (recommended, ~30 min)
+
+Open the copied folder with your AI assistant (Claude, or any assistant that can read
+the files) and paste this prompt:
+
+```text
+This folder contains a Governed Workspace Protocol starter bundle.
+Please initialize it for this workspace.
+
+Read the GWP files, then ask me the minimum questions needed to replace
+the placeholders and create a useful first governed workspace baseline.
+After I answer, update the relevant files and create an initial review record.
+```
+
+The assistant will read the files, ask you a short set of setup questions, then
+replace the placeholders, customize the shared alignment context, and draft an initial
+review-history entry. **You review and approve the result** — the workspace files, not
+the chat, are the durable source of truth.
+
+The full governed procedure (steps, questions, and a definition of done) is a
+first-class GWP process:
+`starter/knowledge/processes/initializing-a-workspace.md`.
+
+### Option B — Manual customization
+
+Prefer to do it by hand? Edit the placeholder tokens yourself, as described in
+[Customize these three things](#customize-these-three-things) below, then commit.
 
 ## Customize these three things
 
