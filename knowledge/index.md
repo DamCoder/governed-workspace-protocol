@@ -74,6 +74,7 @@ The first-class governance artifacts of the protocol:
 
 ## Processes
 
+- [Initializing a Workspace](processes/initializing-a-workspace.md) — AI-assisted setup of a new governed workspace from the starter. Start here.
 - [Conducting a Collaborative Review](processes/conducting-a-review.md) — a step-by-step review runbook.
 
 ---

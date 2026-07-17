@@ -20,4 +20,5 @@ Each process is a single markdown file in this directory with
 
 ## Available processes
 
+- [Initializing a Workspace](initializing-a-workspace.md) — AI-assisted setup of a new governed workspace from the starter bundle.
 - [Conducting a Collaborative Review](conducting-a-review.md) — a step-by-step review runbook (also a worked example of a process).

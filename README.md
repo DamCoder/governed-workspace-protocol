@@ -35,9 +35,13 @@ bundles on the [Releases page](https://github.com/DamCoder/governed-workspace-pr
   GWP and just want a fresh template to spin up another workspace.
 
 Both include a `GETTING-STARTED.md` that walks through copying the files into your own
-workspace and customizing the owner, steward, dates, and trust fields. The bundles are
-built by [`scripts/build-release.sh`](scripts/build-release.sh) and exclude all
-repo-only tooling.
+workspace. The fastest way to go from generic files to a workspace-specific baseline is
+the **AI-assisted initialization** flow: open the bundle with your AI assistant, paste
+the provided prompt, and answer a few questions — it replaces the placeholders,
+customizes the alignment context, and drafts a first review record for you to approve.
+The governed procedure is [`Initializing a
+Workspace`](knowledge/processes/initializing-a-workspace.md). The bundles are built by
+[`scripts/build-release.sh`](scripts/build-release.sh) and exclude all repo-only tooling.
 
 ## Why GWP Exists
 
